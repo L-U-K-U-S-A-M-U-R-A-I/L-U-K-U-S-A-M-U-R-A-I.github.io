@@ -1,2 +1,2 @@
-# blackbaobab.github.io
+# wiki
 Website for blackbaobab organization
