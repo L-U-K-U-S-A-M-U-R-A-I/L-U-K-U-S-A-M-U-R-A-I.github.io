@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <title>BlackBaobab.Africa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="./assets/css/styles.css">    
+</head>
+<body>
+  <div class="page-container">            
+    <div class="translation-wrapper">        
+        <select class="language-options" id="target-language">
+            <option value="0">select language</option>
+            <option value="en" data-lang="en">English</option>
+            <option value="fr" data-lang="fr">Francais</option>
+            <option value="swa" data-lang="swa">Swahili</option>            
+        </select>
+    </div>
+    <br><br>
+    <span class="coming-soon-text yellow-text" data-i18n="title1">SOON</span> &nbsp;    
+    <span class="coming-soon-text green-text" data-i18n="title2">COME</span> &nbsp;
+    <span class="coming-soon-text red-text">!</span>
+    <br><br>    
+    <div class="countdown-display" id="countdown-display">
+        <span id="days"></span><span class="countdown-text">&nbsp;Days</span>
+        <span id="hours"></span><span class="countdown-text">&nbsp;H</span>
+        <span id="minutes"></span><span class="countdown-text">&nbsp;M</span>
+        <span id="seconds"></span><span class="countdown-text">&nbsp;S</span>                   
+    </div>
+    <br><br>
+    <!--
+      <img alt="blackbaobab-logo-halfmoon 2" src="https://github.com/user-attachments/assets/75bdbb8f-2954-4750-a520-0fe8931cb133" class="logo-large">   
+    -->
+    <img src="./assets/images/blackbaobab-logo-tree.png" class="logo-large" title="black baobab logo" />    
+    <br><br>    
+    <div class="coming-soon-tagline-text" data-i18n="tagline">
+      Enabling <a href="#download-brochue" title="Black Baoab Brochure" target="_blank">budget-friendly</a> Digital Transformation for Small Businesses in Africa.         
+    </div> 
+    <br>    
+      
+    <br><br>
+    <input type="text" placeholder="Email" required name="subscriber_email" style="width:50%;">
+        <button class="basic-button notify-button" id="button" type="submit">      
+           <span data-i18n="notify">Get notified</span> <i class="fa fa-bell bell"></i> 
+        </button> 
+    <br><br>        
+    <div class="contact-form-container" id="contact-form-container" tabindex="-1">
+      <form id="contact-form" name="contact-form">            
+            <span class="close icon-wrap" id="close" title="close"><i class="fa fa-close"></i> </span>
+            <br> 
+            <input type="text" placeholder="Name" required name="name" data-i18n="placeholder-name">
+            <input type="text" placeholder="Email" required name="email">            
+            <select name="enquiryType" id="enquiry-type">
+                <option value="0" data-i18n="enquiry-type">Please Select Enquiry Type</option>
+                <option value="1" data-i18n="general-enquiry">General Enquiry</option>
+                <option value="2" data-i18n="digital-transformation-enquiry">
+                  Digital Transformation Enquiry
+                </option>
+                <option value="3" data-i18n="web-App-development-enquiry">Web&App Development Enquiry</option>
+                <option value="4" data-i18n="workflow-optimization-enquiry">
+                  Workflow Optimization Enquiry
+                </option>
+                <option value="5" data-i18n="product-development-enquiry">Product Development Enquiry</option>
+                <option value="6" data-i18n="social-media-management-enquiry">
+                  Social Media Management Enquiry
+                </option>
+                <option value="7" data-i18n="conferencing-training-enquiry">Conferencing Training Enquiry</option>
+                <option value="8" data-i18n="travel-itineraries-enquiry">Travel Itineraries Enquiry</option>
+                <option value="9" data-i18n="going-green-enquiry">Going Green Enquiry</option>
+                <option value="10" data-i18n="retail-setup-enquiry">Retail Setup Enquiry</option>                  
+            </select>                                      
+            <textarea type="text" placeholder="Message" required name="message" rows="5"
+                cols="auto">                  
+            </textarea>                        
+            <button class="basic-button whatsapp-button" id="button" type="submit">  
+            <i class="fa fa-whatsapp whatsapp"></i>    
+               <span data-i18n="send-message-button">SEND WHATSAPP MESSAGE</span>
+            </button>                      
+        </form>
+    </div>
+    <br>    
+    <i class="fa fa-envelope social-media-icon icon-wrap" id="contact-us" title="send us an enquiry" data-i18n="contact-title"></i>
+    <a href="https://wwww.facebook.com/blackbaobab" class="social-media-icon-link" title="black baobab facebook" target="_blank" >
+      <i class="fa fa-facebook social-media-icon icon-wrap" title="see what we get up to" data-i18n="facebook-title"></i>
+    </a>
+    <a href="https://www.medium.com/@blackbaobab" class="social-media-icon-link" title="black baobab blog" 
+      target="_blank" >
+      <i class="fa fa-medium social-media-icon icon-wrap" title="read our thoughts" data-i18n="medium-title"></i> 
+    </a>
+    <a href="../assets/files/black-baobab-brochure-english.pdf" class="social-media-icon-link" id="download-brochure" title="black baobab blog" target="_blank" data-i18n="download-brochure-link">
+      <i class="fa fa-download social-media-icon icon-wrap" title="download our brochure" data-i18n="download-brochure-title"></i>
+    </a>
+    <br><br>   
+  </div>  
+</body>
+<script type="module" src="./assets/js/translation-script.js"> </script>
+<script type="text/javascript" src="./assets/js/contact-form-handler.js"> </script>
+<script type="text/javascript" src="./assets/js/countdown-display.js"> </script>
+<script type="text/javascript" src="./assets/js/whatsapp-messager.js"> </script>
+</html>
