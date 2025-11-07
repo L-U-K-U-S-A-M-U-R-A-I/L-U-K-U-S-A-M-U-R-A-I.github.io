@@ -2,8 +2,8 @@
 
 export const translations = {
     en: {
-            "title1": "SOON",
-            "title2": "COME",
+            "title1": "COMING",
+            "title2": "SOON",
             "tagline": "Enabling  budget friendly Digital Transformation and UNDP/ACFTA regional integration & compliance for Small Businesses in Africa.",
             "notify": "Get notified",
             "enquiry-type": "Please select enquiry type",
