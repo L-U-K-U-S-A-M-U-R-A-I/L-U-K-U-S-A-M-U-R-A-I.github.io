@@ -72,6 +72,15 @@
   width:400px;
 }
 
+.logo-small {
+  height:50px !important; 
+  width:50px !important;
+  float: left;
+  margin-top:25px;
+}
+
+
+
 /* ************** icons *************** */
 .fa {    
   color: #000;
@@ -187,6 +196,32 @@ input.invalid {
 .countdown-display {
   display: block;      
 }
+
+/* ************** insights page ************** */
+.insight-page-wrapper {
+ text-align: center;
+  margin: auto;
+  width: 80%;      
+  padding: 10px;
+  border:1px dotted grey;
+}
+.insight-page-section {
+  margn-top:10px;
+   margin-bottom:10px;
+  height:auto;
+  
+}
+.insight-page-wrapper p {
+  margin-bottom:10px;
+  height:auto;
+  border:1px dotted grey;
+}
+.insight-page-wrapper img {
+  width: 100%;
+  height: auto;
+  border:2px solid #000;
+}
+
 
 /* ************** Mobile UX *************** */
 @media screen and (max-width: 768px) {
