@@ -19,11 +19,11 @@ export const translations = {
             "retail-setup-enquiry": "Retail Setup Enquiry",
             "placeholder-name": "name",
             "send-message-button":"Send WhatsApp message",
-            "contact-title": "send us an enquiry",
+            "contact-title": "Send us an enquiry",
             "facebook-title": "See what we get up to",            
-            "medium-enquiry": "read our thoughts",
+            "medium-enquiry": "Read our thoughts",
             "know-how": "Want to know how?",
-            "download-brochure-title": "download our brochuree",
+            "download-brochure-title": "Download our brochure",
             "download-brochure-link": "../assets/files/black-baobab-brochure-english.pdf"
     },
     swa: {

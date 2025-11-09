@@ -211,17 +211,35 @@ input.invalid {
   height:auto;
   
 }
-.insight-page-wrapper p {
+.insights-page-title {
+  text-align: center !important;
+}
+.insight-page-section h1{
+  text-align: left;
+}
+.insight-page-section h2{
+  text-align: left;
+  color: darkgrey;
+}
+/*.insight-page-wrapper p {
   margin-bottom:10px;
   height:auto;
   border:1px dotted grey;
-}
+}*/
 .insight-page-wrapper img {
   width: 100%;
   height: auto;
   border:2px solid #000;
 }
 
+.insight-menu a {
+  text-decoration: none;
+  color: #c0c0c0;
+  font-weight: bolder;
+}
+.insight-menu a:hover {
+  border-bottom: 3px solid lightgreen;
+}
 
 /* ************** Mobile UX *************** */
 @media screen and (max-width: 768px) {
