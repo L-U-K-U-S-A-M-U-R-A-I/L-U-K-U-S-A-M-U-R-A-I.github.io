@@ -79,8 +79,6 @@
   margin-top:25px;
 }
 
-
-
 /* ************** icons *************** */
 .fa {    
   color: #000;
@@ -127,6 +125,20 @@
 .know-how-button-icon:hover > .thinking-icon::before {
   cursor: pointer;
   content: "\1F609"; 
+}
+/*.undp-sdg-icons-wrapper {
+  width: 100% !important;
+  height: auto;
+  text-align: center;
+}*/
+.undp-sdgs-title-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+.undp-sdgs-icon{
+  width: 100% !important;
+  height: auto;
+  text-align: center;  
 }
 
 /* ************** contact form  *************** */
@@ -199,7 +211,7 @@ input.invalid {
 
 /* ************** insights page ************** */
 .insight-page-wrapper {
- text-align: center;
+  text-align: center;
   margin: auto;
   width: 80%;      
   padding: 10px;
@@ -207,7 +219,7 @@ input.invalid {
 }
 .insight-page-section {
   margn-top:10px;
-   margin-bottom:10px;
+  margin-bottom:10px;
   height:auto;
   
 }

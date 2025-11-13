@@ -133,6 +133,4 @@ document.addEventListener('DOMContentLoaded', function() {
       messageElement.remove();
     }, 3000);
   }
-
-
 });

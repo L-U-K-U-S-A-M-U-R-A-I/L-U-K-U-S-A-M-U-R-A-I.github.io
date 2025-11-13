@@ -21,10 +21,15 @@ export const translations = {
             "send-message-button":"Send WhatsApp message",
             "contact-title": "Send us an enquiry",
             "facebook-title": "See what we get up to",            
-            "medium-enquiry": "Read our thoughts",
+            "medium-title": "Read our thoughts",
+            "discover-insights-title":"Discover african market insights",
             "know-how": "Want to know how?",
             "download-brochure-title": "Download our brochure",
-            "download-brochure-link": "../assets/files/black-baobab-brochure-english.pdf"
+            "download-brochure-link": "../assets/files/black-baobab-brochure-english.pdf",
+            "undp-sdg-link": "https://sdgs.un.org/goals",
+            "undp-sdg-icons":"../assets/images/black-baobab-united-nations-sdg-english.png",
+            "undp-sdg-title-text1":"The BlackBaobab vision contributes to the following",
+            "undp-sdg-title-text2":"United Nations Sustainable Development Goal"
     },
     swa: {
             "title1": "INAKUJA",
@@ -44,12 +49,17 @@ export const translations = {
             "retail-setup-enquiry": "uchunguzi wa kuanzisha rejareja",
             "placeholder-name": "jina lako",
             "send-message-button":"Kutuma WHATSAPP",
-            "contact-title": "tutumie uchunguzi",
-            "facebook-title": "kufuata shughuli zetu za kijamii",            
-            "medium-title": "soma mawazo yetu",
-            "know-how": "kudjuwa dje?",
-            "download-brochure-title":"pakua brosha yetu",
-            "download-brochure-link": "../assets/files/black-baobab-brochure-swahili.pdf"            
+            "contact-title": "Tutumie uchunguzi",
+            "facebook-title": "Kufuata shughuli zetu za kijamii",            
+            "medium-title": "Soma mawazo yetu",
+            "discover-insights-title":"Gundua maarifa ya soko la Afrika",
+            "know-how": "Kudjuwa dje?",
+            "download-brochure-title":"Pakua brosha yetu",
+            "download-brochure-link": "../assets/files/black-baobab-brochure-swahili.pdf",
+            "undp-sdg-link": "https://sdgs.un.org/goals",
+            "undp-sdg-icons":"../assets/images/black-baobab-united-nations-sdg-swahili.png",
+            "undp-sdg-title-text1":"Maono ya BlackBaobab yanachangia malengo",
+            "undp-sdg-title-text2":"yafuatayo ya UNDP-SDG:"            
     },
     fr: {
             "title1": "BIENTÔT",
@@ -69,11 +79,16 @@ export const translations = {
             "retail-setup-enquiry": "demande de marque et de configuration de vente au détail",
             "placeholder-name": "nom",
             "send-message-button":"Envoyer avec WhatsApp",            
-            "contact-title": "envoyez-nous une demande",
-            "facebook-title": "suivre nos activites sociaux",            
-            "medium-title": "lisez nos pensées",
+            "contact-title": "Envoyez-nous une demande",
+            "facebook-title": "Suivre nos activites sociaux",            
+            "medium-title": "Lisez nos pensées",
+            "discover-insights-title":"Découvrez les perspectives du marché africain",
             "know-how": "Savoir comment?",
-            "download-brochure-title": "téléchargez notre brochure",
-            "download-brochure-link": "../assets/files/black-baobab-brochure-francais.pdf"
+            "download-brochure-title": "Téléchargez notre brochure",
+            "download-brochure-link": "../assets/files/black-baobab-brochure-francais.pdf",
+            "undp-sdg-link": "https://sdgs.un.org/fr/goals",
+            "undp-sdg-icons":"../assets/images/black-baobab-united-nations-sdg-francais.png",
+            "undp-sdg-title-text1":"La vision de BlackBaobab contribue aux",
+            "undp-sdg-title-text2":"objectifs suivants du PNUD-Deveopment-Durable:" 
         }
     };
