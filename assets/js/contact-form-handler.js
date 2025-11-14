@@ -1,16 +1,10 @@
 "use strict";
 
 const contactForm = document.getElementById("contact-form-container");        
-// Toggling contact form display
-document.getElementById("contact-us").addEventListener("click", function() {          
-    if (contactForm.style.display === "none") {
-            contactForm.focus(); 
-            //{ preventScroll:false };
-            //window.location.hash = "#contact-us";
-            contactForm.style.display = "block";
-        } else {
-            contactForm.style.display = "none";
-    }
+
+document.getElementById("contact-us").addEventListener("click", function(event) {  
+    event.preventDefault(); 
+    contactForm.style.display = "block";    
 });
 
 document.getElementById("close").addEventListener("click", function(){

@@ -27,9 +27,9 @@ export const translations = {
             "download-brochure-title": "Download our brochure",
             "download-brochure-link": "../assets/files/black-baobab-brochure-english.pdf",
             "undp-sdg-link": "https://sdgs.un.org/goals",
-            "undp-sdg-icons":"../assets/images/black-baobab-united-nations-sdg-english.png",
+            "undp-sdgs-icon-image":"../assets/images/black-baobab-united-nations-sdg-english.png",
             "undp-sdg-title-text1":"The BlackBaobab vision contributes to the following",
-            "undp-sdg-title-text2":"United Nations Sustainable Development Goal"
+            "undp-sdg-title-text2":"United Nations Sustainable Development Goal:"
     },
     swa: {
             "title1": "INAKUJA",
@@ -57,7 +57,7 @@ export const translations = {
             "download-brochure-title":"Pakua brosha yetu",
             "download-brochure-link": "../assets/files/black-baobab-brochure-swahili.pdf",
             "undp-sdg-link": "https://sdgs.un.org/goals",
-            "undp-sdg-icons":"../assets/images/black-baobab-united-nations-sdg-swahili.png",
+            "undp-sdgs-icon-image":"../assets/images/black-baobab-united-nations-sdg-swahili.png",
             "undp-sdg-title-text1":"Maono ya BlackBaobab yanachangia malengo",
             "undp-sdg-title-text2":"yafuatayo ya UNDP-SDG:"            
     },
@@ -87,7 +87,7 @@ export const translations = {
             "download-brochure-title": "Téléchargez notre brochure",
             "download-brochure-link": "../assets/files/black-baobab-brochure-francais.pdf",
             "undp-sdg-link": "https://sdgs.un.org/fr/goals",
-            "undp-sdg-icons":"../assets/images/black-baobab-united-nations-sdg-francais.png",
+            "undp-sdgs-icon-image":"../assets/images/black-baobab-united-nations-sdg-francais.png",
             "undp-sdg-title-text1":"La vision de BlackBaobab contribue aux",
             "undp-sdg-title-text2":"objectifs suivants du PNUD-Deveopment-Durable:" 
         }

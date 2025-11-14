@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const title = myElement.getAttribute('title');
                 const placeHolder = myElement.getAttribute('placeholder');
                 const href = myElement.getAttribute('href');
+                const src = myElement.getAttribute('src');
                 if(title ===null && placeHolder === null && href === null ){
                     element.textContent = translations[lang][key];     
                 }
@@ -30,6 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 if(href !== null) {
                     myElement.href = translations[lang][key]; 
+                }
+                if(src !== null) {
+                    myElement.src = translations[lang][key]; 
                 }                                 
             }
         });
