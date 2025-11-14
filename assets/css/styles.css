@@ -46,8 +46,14 @@
   font-size: 12px;        
   color: #000;
 }   
+.body-link-small {
+  text-decoration: none;
+}
+.body-link-small:hover {
+  text-decoration: underline;  
+}
 
-/* TODO: downoad lnks must be hidden buttons??? */
+/* TODO: download links must be hidden buttons??? */
 .download-links {
   background: none; 
   border:none; 
@@ -134,6 +140,7 @@
 .undp-sdgs-title-text {
   font-size: 10px;
   font-weight: bold;
+  color: #000;
 }
 .undp-sdgs-icon{
   width: 100% !important;
