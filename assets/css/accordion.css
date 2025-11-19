@@ -1,0 +1,64 @@
+.accordion-wrapper{
+    margin-bottom: 30px;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;    
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+.accordion-blurb {
+    padding-left: 25px !important; 
+    padding-right: 25px !important;
+    color: #5a96b9;
+    font-weight: bolder;
+}
+.panel {
+    padding: 10px 18px 10px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    color: #000;
+}
+.panel ul {
+    padding: 15px;
+}
+.panel li {
+    padding: 5px;
+}
+.panel a {
+    text-decoration: none;
+    font-style: italic;
+}
+.panel a:hover {
+    font-weight: bolder;
+}
+
+/*button .sub-menu--button {    
+    font-style: normal !important;
+}*/
+.sub-menu-button:hover {
+    color: #fff !important;
+    background-color: lightgreen !important;
+}
+
+.faq-funnel-button{
+    font-weight: bolder;
+    color: lightgreen;
+}
+
+.faq-funnel-button:hover {
+
+}
+

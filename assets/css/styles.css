@@ -77,12 +77,52 @@
   height:400px; 
   width:400px;
 }
-
 .logo-small {
   height:50px !important; 
-  width:50px !important;
-  float: left;
+  width:50px !important;  
+  align-items: center;
   margin-top:25px;
+}
+.header-logo-lrg {  
+  align-items: center;
+  /*width: 100%;
+  height:80px;*/  
+  height:400px; 
+  width:100%;
+}  
+.header-logo-content-lrg {
+  border-radius: 50%;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;    
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+  background-image: url('/assets/images/blackbaobab-logo-tree-trans-sml.svg');
+  display: inline-block;
+}
+.header-logo-sml {  
+  align-items: center;
+  width: 100%;
+  height:80px;  
+}  
+.header-logo-content-sml {
+  border-radius: 50%;
+  width: 80px;
+  height: 100%;
+  background-color: #fff;    
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+  background-image: url('/assets/images/blackbaobab-logo-tree-trans-sml.svg');
+  display: inline-block;
+}
+.header-logo-content-sml:hover {  
+  background-color: lightgreen;    
+  width: 80px;
+  height: 100%;   
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/blackbaobab-logo-home.svg');
+  display:inline-block;
 }
 
 /* ************** icons *************** */
@@ -93,6 +133,12 @@
   color: #fff !important;
   cursor: pointer;
 } 
+.fa-card-icon {
+    color: #000 !important;    
+}
+.fa-card-icon:hover {
+    color: lightgreen !important;    
+}
 .icon-wrap {
   display: inline-block;
   height: 1.5em;
@@ -103,14 +149,13 @@
   justify-content: center; 
   align-items: center;
 }
-
 .icon-wrap:hover {      
   background-color: lightgreen;
   cursor: pointer; /* Indicates interactivity */
 }
 .social-media-icon-link {
   text-decoration: none;
-}
+} 
 .social-media-icon {
   font-size: 36px; 
   margin-right: 10px;
@@ -120,18 +165,6 @@
   font-size: 24px;  
 }
 
-.know-how-button {
-  text-decoration: none;    
-}
-.know-how-button:hover {
-  color: lightgreen;
-  cursor: pointer;
-}
-
-.know-how-button-icon:hover > .thinking-icon::before {
-  cursor: pointer;
-  content: "\1F609"; 
-}
 /*.undp-sdg-icons-wrapper {
   width: 100% !important;
   height: auto;
@@ -146,6 +179,39 @@
   width: 100% !important;
   height: auto;
   text-align: center;  
+}
+
+/* ************** buttons *************** */
+.know-how-button {
+  text-decoration: none;    
+}
+.know-how-button:hover {
+  color: lightgreen;
+  cursor: pointer;
+}
+
+.know-how-button-icon:hover > .thinking-icon::before {
+  cursor: pointer;
+  content: "\1F609"; 
+}
+.basic-button-square {
+  border: none;
+  border-radius: 4px;
+  background-color: lightgrey !important;
+  color: #000;
+  min-width: 50px;
+  min-height: 50px;
+  text-align: center;
+  cursor: pointer;  
+  margin:2px;  
+}
+.basic-button-square:hover { 
+  background-color: lightgreen !important;
+  color: #fff !important;
+}
+.basic-button-square:hover > .fa { 
+  background-color: lightgreen !important;
+  color: #fff !important;
 }
 
 /* ************** contact form  *************** */
@@ -231,7 +297,7 @@ input.invalid {
   
 }
 .insights-page-title {
-  text-align: center !important;
+  text-align: center !important;  
 }
 .insight-page-section h1{
   text-align: left;
@@ -258,6 +324,11 @@ input.invalid {
 }
 .insight-menu a:hover {
   border-bottom: 3px solid lightgreen;
+}
+
+.share-and-print-buttons-wrapper {
+  margin: auto;      
+  padding: 10px;
 }
 
 /* ************** Mobile UX *************** */
