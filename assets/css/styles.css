@@ -1,10 +1,15 @@
-
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+}
 .page-container {
   text-align: center;
   margin: auto;
   width: 50%;      
   padding: 10px;
   border:1px dotted grey;
+  margin-top:20px;
 }    
 .tanslation-wrapper {  
   float: right;
@@ -71,6 +76,37 @@
   font-weight: bolder;
   font-family: impact;
 }
+.glossary-list li {
+  list-style-type: none;
+}
+.download-list-wrapper {
+  width: 300px;
+  margin: auto;
+  text-align: center !important;
+}
+
+.download-list {  
+  text-align: center;
+  padding-left: 70px ;
+}
+.download-list li {
+  list-style-type: circle;
+  text-align: left;
+}
+.download-list a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.download-list a:hover {
+  font-weight: normal;
+  text-decoration: 3px underline lightgreen;
+}
+.image-text-left {
+  text-align: left;
+  padding:2px;
+  font-size: 16px;
+}
+
 
 /* ************** images *************** */
 .logo-large {
@@ -123,6 +159,35 @@
   background-repeat: no-repeat;
   background-image: url('/assets/images/blackbaobab-logo-home.svg');
   display:inline-block;
+}
+
+/* *** WITH TEXT ON SIDE *** */
+.image-with-text-parent {
+  margin: 1rem;
+  padding: 2rem 2rem; 
+  display: flex;
+}
+.image-with-text-child {  
+  margin: 5px;
+  width: 50%;
+}
+
+.resized-image-with-text-parent {
+  padding: 0 !important;
+  margin: 0 0 !important;
+  border: 1px dotted #000;
+}
+
+.image-wrap {
+    min-width:200px;
+    min-height:200px;
+    max-width: auto;
+    max-height: auto;        
+}
+.resized-image {
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;                      
 }
 
 /* ************** icons *************** */
@@ -286,6 +351,7 @@ input.invalid {
 .insight-page-wrapper {
   text-align: center;
   margin: auto;
+  margin-top:20px;
   width: 80%;      
   padding: 10px;
   border:1px dotted grey;

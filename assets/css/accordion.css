@@ -1,4 +1,4 @@
-.accordion-wrapper{
+.accordion-wrapper {
     margin-bottom: 30px;
 }
 .accordion {
@@ -44,21 +44,14 @@
 .panel a:hover {
     font-weight: bolder;
 }
-
-/*button .sub-menu--button {    
-    font-style: normal !important;
-}*/
 .sub-menu-button:hover {
     color: #fff !important;
     background-color: lightgreen !important;
 }
-
-.faq-funnel-button{
+.faq-funnel-button {
     font-weight: bolder;
     color: lightgreen;
 }
-
 .faq-funnel-button:hover {
 
 }
-
