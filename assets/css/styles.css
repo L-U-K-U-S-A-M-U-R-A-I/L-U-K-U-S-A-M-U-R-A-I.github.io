@@ -10,12 +10,18 @@
   padding: 10px;
   border:1px dotted grey;
   margin-top:20px;
+  margin-bottom: 20px;
 }    
 .tanslation-wrapper {  
   float: right;
 }
 .language-options {
   width: 200px;
+}
+.downloads-container {
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 /*  ************** text ***************   */   
@@ -82,9 +88,8 @@
 .download-list-wrapper {
   width: 300px;
   margin: auto;
-  text-align: center !important;
+  text-align: center !important;  
 }
-
 .download-list {  
   text-align: center;
   padding-left: 70px ;
@@ -96,7 +101,13 @@
 .download-list a {
   font-weight: bold;
   text-decoration: none;
+  color: #444;
+
 }
+.download-list a:visited {  
+  color: #444;
+}
+
 .download-list a:hover {
   font-weight: normal;
   text-decoration: 3px underline lightgreen;

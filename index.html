@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="page-container">            
-    <div class="translation-wrapper">        
+    <div class="translation-wrapper">
         <select class="language-options" id="target-language">
             <option value="0">select language</option>
             <option value="en" data-lang="en">English</option>
@@ -40,13 +40,11 @@
     <div class="coming-soon-tagline-text" data-i18n="tagline">
       Enabling <a href="#download-brochue" title="Black Baoab Brochure" target="_blank">budget-friendly</a> Digital Transformation for Small Businesses in Africa.         
     </div> 
-    <br>    
-      
-    <br><br>
+    <br><br><br>
     <input type="text" placeholder="Email" required name="subscriber_email" style="width:50%;">
-        <button class="basic-button notify-button" id="button" type="submit">      
-           <span data-i18n="notify">Get notified</span> <i class="fa fa-bell bell"></i> 
-        </button> 
+    <button class="basic-button notify-button" id="button" type="submit">      
+     <span data-i18n="notify">Get notified</span> <i class="fa fa-bell bell"></i> 
+    </button> 
     <br><br>        
     <div class="contact-form-container" id="contact-form-container" tabindex="-1">
       <form id="contact-form" name="contact-form">            
@@ -82,6 +80,35 @@
             </button>                      
         </form>
     </div>
+    <div class="contact-form-container downloads-container" id="downloads-container">
+      <span class="close icon-wrap" id="close-downloads" title="close"><i class="fa fa-close close-x"></i> </span>
+      <br>
+      <h1 class="insights-page-title">DOWNLOADS </h1>
+      <br>
+      <div class="download-list-wrapper">
+        <ul class="download-list">
+          <li>
+          <a href="../assets/files/black-baobab-brochure-english.pdf" 
+             id="download-brochure" title="black baobab blrochure" target="_blank" 
+             data-i18n="download-brochure-link">
+             Brochure
+          </a>
+          </li>
+          <li>
+         <a href="insights.html" title="black baobab african digital market insights">
+          African Market Insights
+         </a>
+          </li>
+          <li>
+          <a href="digital-transformation-glossary.html" title="glossary of digital transformation  
+          jargon 2025">
+          Digital Transformation Glossary
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>    
+  <!--</div>-->
     <br>    
     <i class="fa fa-envelope social-media-icon icon-wrap" id="contact-us" title="send us an enquiry" data-i18n="contact-title"></i>
     <a href="https://wwww.facebook.com/blackbaobab" class="social-media-icon-link" title="black baobab facebook" target="_blank" >
@@ -91,18 +118,13 @@
       target="_blank" >
       <i class="fa fa-medium social-media-icon icon-wrap" title="read our thoughts" data-i18n="medium-title"></i> 
     </a>
+    <i class="fa fa-download social-media-icon icon-wrap" id="downloads" title="brochure, insights, glossary" data-i18n="free-download-title"></i>
 
-    <a href="downloads.html" class="social-media-icon-link" id="download-brochure" title="black baobab  
-       downloads" data-i18n="downloads">
-      <i class="fa fa-download social-media-icon icon-wrap" title="download for free" data-i18n="free-download-title"></i>
-    </a>
     <!--
-    <a href="../assets/files/black-baobab-brochure-english.pdf" class="social-media-icon-link" id="download-brochure" title="black baobab blrochure" target="_blank" data-i18n="download-brochure-link">
-      <i class="fa fa-download social-media-icon icon-wrap" title="download our brochure" data-i18n="download-brochure-title"></i>
-    </a>
-    <a href="../insights.html" class="social-media-icon-link" id="discover-market-insights" title="black baobab insights" data-i18n="discover-insights-link">
-      <i class="fa fa-info social-media-icon icon-wrap" title="Discover african market insights" data-i18n="discover-insights-title"></i>
-    </a> 
+      <a href="downloads.html" class="social-media-icon-link" id="downloads" title="black baobab  
+       downloads" data-i18n="downloads">
+        <i class="fa fa-download social-media-icon icon-wrap" title="brochure, insights, glossary" data-i18n="free-download-title"></i>
+      </a>    
     -->
     <br><br> 
     <hr> 
@@ -119,6 +141,7 @@
 </body>
 <script type="module" src="./assets/js/translation-script.js"> </script>
 <script type="text/javascript" src="./assets/js/contact-form-handler.js"> </script>
+<script type="text/javascript" src="./assets/js/downloads-handler.js"> </script>
 <script type="text/javascript" src="./assets/js/countdown-display.js"> </script>
 <script type="text/javascript" src="./assets/js/whatsapp-messager.js"> </script>
 </html>
