@@ -18,10 +18,11 @@
 .language-options {
   width: 200px;
 }
-.downloads-container {
-  background-color: lightgrey;
+.downloads-container {  
+  background-color: #f2f3f5;
   margin-bottom: 20px;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 /*  ************** text ***************   */   
