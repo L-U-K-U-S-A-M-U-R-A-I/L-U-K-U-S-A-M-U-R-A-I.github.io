@@ -337,9 +337,14 @@ input.invalid {
   background-color: lightgreen !important;
   color: #fff !important;
 }
+.whatsapp-button {
+  padding:2px;
+  padding-left:7px;
+  padding-right:7px;
+}
 .whatsapp-button:hover > .whatsapp {
   background-color: lightgreen !important;
-  color: #fff !important;
+  color: #fff !important;  
 }
 .close {  
   font-size: 32px;
