@@ -23,6 +23,7 @@
   margin-bottom: 20px;
   padding-bottom: 30px;
   padding-top: 10px;
+  border-radius: 5px;
 }
 
 /*  ************** text ***************   */   
@@ -300,6 +301,7 @@ form {
   background-color: #f2f3f5;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 5px;
   
 }
 select, textarea, input[type="text"], input[type="email"] {
