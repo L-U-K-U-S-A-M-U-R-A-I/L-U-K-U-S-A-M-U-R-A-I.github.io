@@ -292,6 +292,16 @@
   color: #fff !important;
 }
 
+.share-buttons-wrapper {
+  display: none;  
+  border-radius: 3px;
+  padding: 3px;
+  width:200px;
+  float:right;
+  min-height: 40px;  
+  transition: width 2s ease;
+}
+
 /* ************** contact form  *************** */
 .contact-form-container {
   display: none;  
