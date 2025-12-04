@@ -144,14 +144,8 @@
           <button class="basic-button-square fa-card-icon" id="share-button" style="float:right;">
             <i class="fa fa-share-alt" aria-hidden="true"></i>
           </button>      
-        </div>
-        <div class="share-buttons-wrapper" id="share-buttons-wrapper">            
-              <i class="fa fa-linkedin icon-wrap share-button" id="share-linkedin"></i>                        
-              <i class="fa fa-twitter icon-wrap share-button" id="share-twitter"></i>                        
-              <i class="fa fa-facebook icon-wrap share-button" id="share-facebook"></i>                            
-              <i class="fa fa-whatsapp icon-wrap share-button" id="share-whatsapp"></i>            
-        </div>
-        <!--<div class="share-buttons-wrapper" id="share-buttons-wrapper">
+        </div>        
+        <div class="share-buttons-wrapper" id="share-buttons-wrapper">
             <a class="social-media-icon-link icon-wrap share-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.blackbaobab.africa%2Finsights.html" title="share on linkedin" id="share-linkedin"> 
               <i class="fa fa-linkedin"></i>
             </a>
@@ -164,12 +158,25 @@
             <a class="social-media-icon-link icon-wrap share-button" target="_blank" rel="noopener noreferrer" href="https://whatsapp://send?text=http%3A%2F%2Fwww.blackbaobab.africa%2Finsights.html" title="share on whatsapp" id="share-whatsapp">      
               <i class="fa fa-whatsapp"></i>
             </a>
-        </div>-->
+        </div>
       <br>    
     </div>
     <button id="scrollToTopBtn" title="scroll to top"><i class="fa fa-arrow-up scroll-up"></i></button>
   </div>
 </body>
 <script type="text/javascript" src="./assets/js/accordion.js"> </script>
-<script type="text/javascript" src="./assets/js/share-buttons-handler.js"> </script>
+<script type="text/javascript">
+  let insighstUrl = "https://l-u-k-u-s-a-m-u-r-a-i.github.io/insights.html";
+  document.getElementById("share-button").addEventListener("click", function(event) {  
+    event.preventDefault(); 
+    navigator.clipboard.writeText(insighstUrl)
+    .then(() => {         
+          alert('Link copied to clipboard!');           
+      })
+      .catch(err => {
+          console.error('Failed to copy text: ', err);         
+    });      
+  });
+</script>
+<!--<script type="text/javascript" src="./assets/js/share-buttons-handler.js"> </script> -->
 </html>
