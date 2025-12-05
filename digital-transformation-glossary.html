@@ -291,7 +291,7 @@
           </div>  
       </span>                 
       <div class="share-and-print-buttons-wrapper">
-          <a href="#" title="glossary of digital transformation jargon 2025" target="_blank">
+          <a href="../assets/files/black-baobab-digital-transformation-glossary.pdf" title="glossary of digital transformation jargon 2025" target="_blank">
             <button class="basic-button-square" style="float:right;">
               <i class="fa fa-download" aria-hidden="true"></i>
             </button>          
@@ -325,7 +325,7 @@
   document.getElementById("share-button-glossary").addEventListener("click", function(event) {  
     event.preventDefault(); 
     navigator.clipboard.writeText(glossaryUrl)
-    .then(() => {         
+    .then(() => {                             
           alert('Link copied to clipboard!');           
       })
       .catch(err => {
