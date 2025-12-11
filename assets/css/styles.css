@@ -388,24 +388,18 @@ input.invalid {
 .insight-page-section {
   margn-top:10px;
   margin-bottom:10px;
-  height:auto;
-  
+  height:auto;  
 }
 .insights-page-title {
   text-align: center !important;  
 }
-.insight-page-section h1{
+.insight-page-section h1 {
   text-align: left;
 }
-.insight-page-section h2{
+.insight-page-section h2 {
   text-align: left;
   color: darkgrey;
 }
-/*.insight-page-wrapper p {
-  margin-bottom:10px;
-  height:auto;
-  border:1px dotted grey;
-}*/
 .insight-page-wrapper img {
   width: 100%;
   height: auto;
@@ -420,10 +414,19 @@ input.invalid {
 .insight-menu a:hover {
   border-bottom: 3px solid lightgreen;
 }
-
 .share-and-print-buttons-wrapper {
   margin: auto;      
   padding: 10px;
+}
+.share-link {
+  text-decoration: none;  
+  font-weight: bold;
+  font-style: normal !important;
+  color:#000;
+}
+.share-link:hover {
+  text-decoration: 3px underline lightgreen;  
+  color: grey;
 }
 
 /* ************** Mobile UX *************** */
