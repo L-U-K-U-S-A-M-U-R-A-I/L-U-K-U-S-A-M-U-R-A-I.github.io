@@ -6,7 +6,8 @@ const downloadsListWrapper = document.getElementById("downloads-container");
 document.getElementById("contact-us").addEventListener("click", function(event) {  
     event.preventDefault();
     downloadsListWrapper.style.display = "none";
-    contactForm.style.display = "block";      
+    contactForm.style.display = "block";  
+    contactForm.focus();    
 });
 
 document.getElementById("close").addEventListener("click", function(event) {
