@@ -10,14 +10,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (validateForm()) {            
       var name = form.elements["name"].value;      
-      var email = form.elements["email"].value;      
+      var email = form.elements["email"].value;  
+      var country = form.elements["country"].value;  
+      var industry = form.elements["industryType"].value;      
+      var revenueRange = form.elements["revenueRange"].value;  
       var message  = form.elements["message"].value;
       message = message.trim();      
       var enquiryTypeText = form.elements["enquiryType"]
                                 .options[form.elements["enquiryType"].selectedIndex]
                                 .textContent;                  
       var messageTemplate = `Enquiry: ${enquiryTypeText} 
-                             From: ${name}                             
+                             From: ${name}
+                             Country: ${country}                             
+                             Industry: ${industry}
+                             Revenue: ${revenueRange}
                              Message: ${message}
                             `;  
 
