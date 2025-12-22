@@ -25,6 +25,16 @@
   padding-top: 10px;
   border-radius: 5px;
 }
+.side-by-side-parent {
+  display: flex;
+  height: auto;
+  padding: 3px;  
+}
+.side-by-side-child {
+  width: 50%;  
+  padding: 2px;  
+  margin: 2px;
+}
 
 /*  ************** text ***************   */   
 .coming-soon-text {            
@@ -52,7 +62,7 @@
   height:150px;
   width:auto;
   background-color: darkgray;
-  color: #C5c5c5;
+  color: #c5c5c5;
 }
 .coming-soon-tagline-text {
   font-weight: bold;
@@ -118,6 +128,109 @@
   text-align: left;
   padding:2px;
   font-size: 16px;
+}
+
+/* ************** cards *************** */
+
+.card-container {    
+  justify-content: center;
+  display: flex;  
+  height:auto;
+  width: 100%;  
+}
+
+.card {  
+  margin: 5px;
+  padding: 5px;
+  border: 1px dotted green;
+
+  /*word-break: break-all;*/
+  white-space: normal;
+}
+.card-img {
+  height: 200px !important;
+  width: 200px !important;  
+  text-align: center;
+}
+.card ul li {
+  padding: 1px;
+  font-size: 12px;
+  text-align: left;
+  color: gray;
+  padding-top: 1px; 
+}
+.card-sml {
+  min-height: 100px;
+  min-width: 100px;  
+}
+.card-lrg {
+  min-height: 200px;
+  min-width: 200px;  
+}
+.card-title-sml {
+  font-weight: bolder;
+  color: #000;
+  font-stretch: expanded;
+  font-size: 10px;
+}
+.card-title-lrg {
+  font-weight: bolder;
+  color: #000;
+  font-stretch: expanded;
+  font-size: 14px;
+}
+.card-text-sml{
+  font-weight: normal;
+  color: darkgray;  
+  font-size: 12px;
+}
+
+.card-icon-md {
+  font-size: 24px;
+  margin: 2px;
+}
+.card-icon-lg {
+  font-size: 42px;
+  margin:5px;
+}
+.card-icon-lg:hover {
+  color:#000 !important;
+}
+
+.card-icon {
+  text-align: left;
+}
+
+/* ------ flex container ------- */
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row { margin: 0 -5px; }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ------ mobile UX ------- */
+@media screen and (max-width: 768px) {   
+  .card-container {
+    flex-direction: column;    
+  }  
+  .card-lrg  {
+    width: 100%;
+  }
+  .card-sml  {
+    width: 100%;
+
+  }
 }
 
 
@@ -204,13 +317,7 @@
 }
 
 /* ************** icons *************** */
-.fa {    
-  color: #000;
-}
-.fa:hover {  
-  color: #fff !important;
-  cursor: pointer;
-} 
+
 .fa-card-icon {
     color: #000 !important;    
 }
@@ -257,6 +364,26 @@
   width: 100% !important;
   height: auto;
   text-align: center;  
+}
+
+
+/* ---- font awesome --- */
+.fa {    
+  color: #000;
+}
+.fa-neutral {
+  color: #000;
+}
+.fa:hover {  
+  color: #fff !important;
+  cursor: pointer;
+}
+.fa:hover > .fa-neutral {
+  color: #000 !important;
+  cursor: none;
+}
+.fa-check {
+  color: green;
 }
 
 /* ************** buttons *************** */
