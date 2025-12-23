@@ -2,6 +2,7 @@
 
 /* eslint-disable no-invalid-this */
 // source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
+openPanels();
 
 const acc = document.getElementsByClassName('accordion');
 
@@ -44,11 +45,17 @@ function topFunction() {
   closePanels();
 }
 
-function closePanels()
-{  
+function closePanels() {  
   const panels = document.querySelectorAll(".panel");
       panels.forEach(element => {
       element.style.display = "none";
+    });
+}
+
+function openPanels() {
+  const panels = document.querySelectorAll(".panel");
+      panels.forEach(element => {
+      element.style.display = "block";
     });
 }
 
