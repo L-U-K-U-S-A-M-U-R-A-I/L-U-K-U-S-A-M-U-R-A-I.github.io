@@ -143,6 +143,7 @@
   margin: 5px;
   padding: 5px;
   border: 1px dotted green;
+  border-radius: 5px;
 
   /*word-break: break-all;*/
   white-space: normal;
@@ -369,21 +370,26 @@
 .fa {    
   color: #000;
 }
-.fa-neutral {
-  color: #000;
-}
-.fa:hover > .fa-neutral {
+.neutral {
   color: #000 !important;
-  cursor: none;
+  cursor: none !important;
 }
 .fa:hover {  
-  color: #fff !important;
+  color: #fff;
   cursor: pointer;
 }
-
+.fa:hover > .neutral {
+  color: #000 !important;
+  cursor: none !important;
+}
 .fa-check {
   color: green;
 }
+.fa-check:hover {
+  color: green !important;
+  cursor: none !important;
+}
+
 
 /* ************** buttons *************** */
 .know-how-button {
@@ -437,8 +443,7 @@ form {
   background-color: #f2f3f5;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
 }
 select, textarea, input[type="text"], input[type="email"] {
   width: 80%;    
@@ -512,8 +517,8 @@ input.invalid {
   border:1px dotted grey;
 }
 .insight-page-section {
-  margn-top:10px;
-  margin-bottom:10px;
+  margin-top:25px;
+  margin-bottom:25px;
   height:auto;  
 }
 .insights-page-title {
