@@ -186,12 +186,12 @@
 }
 
 .card-icon-md {
-  font-size: 24px;
+  font-size: 36px;
   margin: 2px;
 }
-.card-icon-lg {
+.card-icon-lrg {
   font-size: 42px;
-  margin:5px;
+  margin: 2px;
 }
 .card-icon-lg:hover {
   color:#000 !important;
@@ -220,7 +220,7 @@
 }
 
 /* ------ mobile UX ------- */
-@media screen and (max-width: 768px) {   
+@media screen and (max-width: 992px) {   
   .card-container {
     flex-direction: column;    
   }  
@@ -349,7 +349,6 @@
   content: "\1F914"; 
   font-size: 24px;  
 }
-
 /*.undp-sdg-icons-wrapper {
   width: 100% !important;
   height: auto;
@@ -366,7 +365,6 @@
   text-align: center;  
 }
 
-
 /* ---- font awesome --- */
 .fa {    
   color: #000;
@@ -374,14 +372,15 @@
 .fa-neutral {
   color: #000;
 }
-.fa:hover {  
-  color: #fff !important;
-  cursor: pointer;
-}
 .fa:hover > .fa-neutral {
   color: #000 !important;
   cursor: none;
 }
+.fa:hover {  
+  color: #fff !important;
+  cursor: pointer;
+}
+
 .fa-check {
   color: green;
 }
