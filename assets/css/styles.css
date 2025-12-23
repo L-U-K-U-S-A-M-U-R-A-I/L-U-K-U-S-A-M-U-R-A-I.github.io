@@ -390,6 +390,15 @@
   cursor: none !important;
 }
 
+.fa-arrow-right {
+  color: #000 !important;
+  cursor: none !important;
+}
+.fa-arrow-right:hover {
+  color: #000 !important;
+  cursor: none !important;
+}
+
 
 /* ************** buttons *************** */
 .know-how-button {
