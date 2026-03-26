@@ -1,6 +1,6 @@
     
 
-    const launchDate = new Date("February 31, 2026 23:59:59").getTime();
+    const launchDate = new Date("May 31, 2026 23:59:59").getTime();
 
     function getRemainingTime() {
         const now = new Date().getTime();
