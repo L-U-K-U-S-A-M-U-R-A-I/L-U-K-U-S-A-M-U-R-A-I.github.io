@@ -66,7 +66,7 @@
 }
 .coming-soon-tagline-text {
   font-weight: bold;
-  font-size: 12px;        
+  font-size: 18px;        
   color: #000;
 }   
 .body-link-small {
@@ -339,6 +339,19 @@
   background-color: lightgreen;
   cursor: pointer; /* Indicates interactivity */
 }
+.current-icon {
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  padding: 0.25em;
+  border-radius: 50%;
+  justify-content: center; 
+  align-items: center;
+
+  background-color: lightgreen;
+  color: #fff;
+  cursor: pointer;
+}
 .social-media-icon-link {
   text-decoration: none;
 } 
@@ -570,14 +583,15 @@ input.invalid {
 }
 
 /* ************** Mobile UX *************** */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {*/
+  @media screen and (max-width: 823px) {
   .page-container {
     width:auto;
     border:0;
   }
   .logo-large {
     height:200px; 
-    width:200px;
+    width:auto;
   }
   .social-media-icon {
     font-size: 24px; 
