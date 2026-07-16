@@ -349,7 +349,7 @@
   align-items: center;
 
   background-color: lightgreen;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
 }
 .social-media-icon-link {

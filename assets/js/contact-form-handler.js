@@ -1,6 +1,10 @@
 "use strict";
 
-const downloadsListWrapper = document.getElementById("downloads-container");       
+import { removeCurrentIcon } from './helper.js';
+
+const downloadsListWrapper = document.getElementById("downloads-container");
+const contactForm = document.getElementById("contact-form-container");  
+const contactIcon = document.getElementById("contact-us");       
 
 window.addEventListener('load', (event) => {    
     const queryString = window.location.search; 
@@ -12,31 +16,26 @@ window.addEventListener('load', (event) => {
     };
 });
 
-const contactForm = document.getElementById("contact-form-container");  
-const contactIcon = document.getElementById("contact-us");
-
 document.getElementById("contact-us").addEventListener("click", function(event) {  
     event.preventDefault();
     downloadsListWrapper.style.display = "none";
     contactForm.style.display = "block";  
     contactForm.focus();
 
-    removeIconWrapper();
+    removeCurrentIcon();
     contactIcon.classList.add("current-icon");
-    contactIcon.style.color = "white";
+    //contactIcon.style.color = "white";
 });
 
 document.getElementById("close").addEventListener("click", function(event) {
     event.preventDefault(); 
     contactForm.style.display = "none"; 
-   
-    contactIcon.classList.remove("current-icon");
-    contactIcon.style.color = "black";
+    contactIcon.classList.remove("current-icon");    
 });
  
-function removeIconWrapper() {
+/*function removeCurrentIcon() {
         var elems = document.querySelectorAll(".icon-wrap");
         [].forEach.call(elems, function(el) {
             el.classList.remove("current-icon");
         });
-}
+}*/
