@@ -21,10 +21,8 @@ document.getElementById("contact-us").addEventListener("click", function(event) 
     downloadsListWrapper.style.display = "none";
     contactForm.style.display = "block";  
     contactForm.focus();
-
     removeCurrentIcon();
     contactIcon.classList.add("current-icon");
-    //contactIcon.style.color = "white";
 });
 
 document.getElementById("close").addEventListener("click", function(event) {
@@ -32,10 +30,3 @@ document.getElementById("close").addEventListener("click", function(event) {
     contactForm.style.display = "none"; 
     contactIcon.classList.remove("current-icon");    
 });
- 
-/*function removeCurrentIcon() {
-        var elems = document.querySelectorAll(".icon-wrap");
-        [].forEach.call(elems, function(el) {
-            el.classList.remove("current-icon");
-        });
-}*/
