@@ -23,29 +23,13 @@
             <option value="swa" data-lang="swa">Swahili</option>            
         </select>
     </div>
-    <br><br>
-    <!--<span class="coming-soon-text yellow-text" data-i18n="title1">COMING</span> &nbsp;    
-    <span class="coming-soon-text green-text" data-i18n="title2">SOON</span> &nbsp;
-    <span class="coming-soon-text red-text">!</span>
-    <br><br>    
-    <div class="countdown-display" id="countdown-display">
-        <span id="days"></span><span class="countdown-text">&nbsp;Days</span>
-        <span id="hours"></span><span class="countdown-text">&nbsp;H</span>
-        <span id="minutes"></span><span class="countdown-text">&nbsp;M</span>
-        <span id="seconds"></span><span class="countdown-text">&nbsp;S</span>                   
-    </div> -->
-    <br><br>    
+    <br><br>      
     <img src="./assets/images/blackbaobab-logo-tree.png" class="logo-large" title="black baobab logo" />       
     <br><br>    
     <div class="coming-soon-tagline-text" data-i18n="tagline">
       Black Baobab is enabling <a href="#download-brochue" title="motto" target="_blank">budget-friendly</a> Digital Transformation for Small Businesses in Africa.         
     </div> 
-    <br><br><br>
-    <input type="text" placeholder="Email" required name="subscriber_email" style="width:50%;">
-    <button class="basic-button notify-button" id="button" type="submit">      
-     <span data-i18n="notify">Get notified</span> <i class="fa fa-bell bell"></i> 
-    </button> 
-    <br><br>        
+    <br><br>       
     <div class="contact-form-container" id="contact-form-container" tabindex="-1">
       <form id="contact-form" name="contact-form">            
             <span class="close icon-wrap" id="close" title="close"><i class="fa fa-close close-x"></i> </span>
@@ -119,7 +103,7 @@
             <i class="fa fa-whatsapp whatsapp"></i>    
                <span data-i18n="send-message-button">SEND WHATSAPP MESSAGE</span>
             </button>                      
-        </form>
+      </form>
     </div>
     <div class="contact-form-container downloads-container" id="downloads-container">
       <span class="close icon-wrap" id="close-downloads" title="close"><i class="fa fa-close close-x"></i> </span>
@@ -153,10 +137,19 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="contact-form-container subscriptions-container" id="subscriptions-container">
+      <span class="close icon-wrap" id="close-subscriptions" title="close"><i class="fa fa-close close-x"></i> </span>
+      <br><br><br>
+        <input type="text" placeholder="Email" required name="subscriber_email" style="width:50%;">
+          <button class="basic-button notify-button" id="button" type="submit">      
+            <span data-i18n="notify">Get notified</span> <i class="fa fa-bell bell"></i> 
+          </button>
     </div>      
     <br>    
     <i class="fa fa-envelope social-media-icon icon-wrap" id="contact-us" title="send us an enquiry" data-i18n="contact-title"></i>
     <i class="fa fa-download social-media-icon icon-wrap" id="downloads" title="brochure, insights, glossary" data-i18n="free-download-title"></i>
+    <i class="fa fa-bell bell social-media-icon icon-wrap" id="subscriptions" title="subscriptions to news & events" data-i18n="subscription-signup-title"></i>
     <a href="https://wwww.facebook.com/blackbaobab" class="social-media-icon-link" title="black baobab facebook" target="_blank" >
       <i class="fa fa-facebook social-media-icon icon-wrap" title="see what we get up to" data-i18n="facebook-title"></i>
     </a>
@@ -164,7 +157,7 @@
       target="_blank" >
       <i class="fa fa-medium social-media-icon icon-wrap" title="read our thoughts" data-i18n="medium-title"></i> 
     </a>    
-    <br><br> 
+    <br><br> <br><br> <br><br>
     <hr> 
     <div class="undp-sdg-icons-wrapper">
       <span class="undp-sdgs-title-text" data-i18n="undp-sdg-title-text1">The BlackBaobab vision contributes to the following</span>
@@ -180,6 +173,7 @@
 <script type="module" src="./assets/js/translation-script.js"> </script>
 <script type="module" src="./assets/js/contact-form-handler.js"> </script>
 <script type="module" src="./assets/js/downloads-handler.js"> </script>
+<script type="module" src="./assets/js/subscriber-form-handler.js"> </script>
 <!--<script type="text/javascript" src="./assets/js/countdown-display.js"> </script> -->
 <script type="text/javascript" src="./assets/js/whatsapp-messager.js"> </script>
 </html>

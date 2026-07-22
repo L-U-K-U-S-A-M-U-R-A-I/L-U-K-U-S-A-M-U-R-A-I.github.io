@@ -2,8 +2,9 @@
 
 import { removeCurrentIcon } from './helper.js';
 
-const downloadsListWrapper = document.getElementById("downloads-container");
-const contactForm = document.getElementById("contact-form-container");  
+const downloadsContainer = document.getElementById("downloads-container");
+const subscriptionsContainer = document.getElementById("subscriptions-container");
+const contactFormContainer = document.getElementById("contact-form-container");  
 const contactIcon = document.getElementById("contact-us");       
 
 window.addEventListener('load', (event) => {    
@@ -11,22 +12,23 @@ window.addEventListener('load', (event) => {
     const urlParams = new URLSearchParams(queryString);  
     const action = urlParams.get('action-type');     
     if (action !== undefined && action === "contact-form") {  
-        downloadsListWrapper.style.display = "block";  
-        downloadsListWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });  
+        downloadsContainer.style.display = "block";  
+        downloadsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });  
     };
 });
 
 document.getElementById("contact-us").addEventListener("click", function(event) {  
     event.preventDefault();
-    downloadsListWrapper.style.display = "none";
-    contactForm.style.display = "block";  
-    contactForm.focus();
+    downloadsContainer.style.display = "none";
+    subscriptionsContainer.style.display = "none";
+    contactFormContainer.style.display = "block";  
+    contactFormContainer.focus();
     removeCurrentIcon();
     contactIcon.classList.add("current-icon");
 });
 
 document.getElementById("close").addEventListener("click", function(event) {
     event.preventDefault(); 
-    contactForm.style.display = "none"; 
+    contactFormContainer.style.display = "none"; 
     contactIcon.classList.remove("current-icon");    
 });

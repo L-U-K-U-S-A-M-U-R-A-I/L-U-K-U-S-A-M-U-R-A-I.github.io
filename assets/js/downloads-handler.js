@@ -2,21 +2,24 @@
 
 import { removeCurrentIcon } from './helper.js';
 
-const downloadsList = document.getElementById("downloads-container");
-const contactFormWrapper = document.getElementById("contact-form-container");  
+const downloadsContainer = document.getElementById("downloads-container");
+const contactFormContainer = document.getElementById("contact-form-container");
+const subscriptionsContainer = document.getElementById("subscriptions-container");  
 const downloadIcon = document.getElementById("downloads");        
 
 document.getElementById("downloads").addEventListener("click", function(event) {  
     event.preventDefault(); 
-    contactFormWrapper.style.display = "none";
-    downloadsList.style.display = "block";     
+    contactFormContainer.style.display = "none";
+    subscriptionsContainer.style.display = "none";
+    downloadsContainer.style.display = "block";
+    downloadsContainer.focus();  
     removeCurrentIcon();
     downloadIcon.classList.add("current-icon");
 });
 
 document.getElementById("close-downloads").addEventListener("click", function(event) {
     event.preventDefault(); 
-    downloadsList.style.display = "none"; 
+    downloadsContainer.style.display = "none"; 
     downloadIcon.classList.remove("current-icon");
 });
 
