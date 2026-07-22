@@ -377,9 +377,11 @@
   text-align: center;
 }*/
 .undp-sdgs-title-text {
-  font-size: 10px;
-  font-weight: bold;
-  color: #101ff7;
+  font-size: 12px;
+  line-height: 5%;
+  font-weight: normal;
+  /*color: #101ff7;*/
+  color: #3a409c;
 }
 .undp-sdgs-icon{
   width: 100% !important;
