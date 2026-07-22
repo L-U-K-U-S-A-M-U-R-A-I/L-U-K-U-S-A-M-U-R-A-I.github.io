@@ -39,7 +39,7 @@ export const translations = {
             "undp-sdg-link": "https://sdgs.un.org/goals",
             "undp-sdgs-icon-image":"../assets/images/black-baobab-united-nations-sdg-english.png",
             "undp-sdg-title-text1":"The BlackBaobab vision contributes to the following",
-            "undp-sdg-title-text2":"United Nations Sustainable Development Goal:"
+            "undp-sdg-title-text2":"United Nations Sustainable Development Goals:"
     },
     swa: {
             "title1": "INAKUJA",
