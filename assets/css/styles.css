@@ -3,6 +3,9 @@
      padding: 0;
      box-sizing: border-box; 
 }
+.page-section {
+  display: none;  
+}
 .page-container {
   text-align: center;
   margin: auto;
@@ -25,7 +28,6 @@
   padding-top: 10px;
   border-radius: 5px;
 }
-
 .subscriptions-container {  
   background-color: #f2f3f5;
   margin-bottom: 20px;
@@ -127,7 +129,6 @@
 .download-list a:visited {  
   color: #444;
 }
-
 .download-list a:hover {
   font-weight: normal;
   text-decoration: 3px underline lightgreen;
@@ -139,14 +140,12 @@
 }
 
 /* ************** cards *************** */
-
 .card-container {    
   justify-content: center;
   display: flex;  
   height:auto;
   width: 100%;  
 }
-
 .card {  
   margin: 5px;
   padding: 5px;
@@ -193,7 +192,6 @@
   color: #909090;  
   font-size: 14px;
 }
-
 .card-icon-md {
   font-size: 36px;
   margin: 2px;
@@ -205,22 +203,18 @@
 .card-icon-lg:hover {
   color:#000 !important;
 }
-
 .card-icon {
   text-align: left;
 }
 
 /* ------ flex container ------- */
-
 .column {
   float: left;
   width: 25%;
   padding: 0 10px;
 }
-
 /* Remove extra left and right margins, due to padding */
 .row { margin: 0 -5px; }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -241,7 +235,6 @@
 
   }
 }
-
 
 /* ************** images *************** */
 .logo-large {
@@ -306,13 +299,11 @@
   margin: 5px;
   width: 50%;
 }
-
 .resized-image-with-text-parent {
   padding: 0 !important;
   margin: 0 0 !important;
   border: 1px dotted #000;
 }
-
 .image-wrap {
     min-width:200px;
     min-height:200px;
@@ -326,7 +317,6 @@
 }
 
 /* ************** icons *************** */
-
 .fa-card-icon {
     color: #000 !important;    
 }
@@ -412,7 +402,6 @@
   color: green !important;
   cursor: none !important;
 }
-
 .fa-arrow-right {
   color: #000 !important;
   cursor: none !important;
@@ -422,7 +411,6 @@
   cursor: none !important;
 }
 
-
 /* ************** buttons *************** */
 .know-how-button {
   text-decoration: none;    
@@ -431,7 +419,6 @@
   color: lightgreen;
   cursor: pointer;
 }
-
 .know-how-button-icon:hover > .thinking-icon::before {
   cursor: pointer;
   content: "\1F609"; 
@@ -455,7 +442,6 @@
   background-color: lightgreen !important;
   color: #fff !important;
 }
-
 .share-buttons-wrapper {
   display: none;  
   border-radius: 3px;
@@ -467,10 +453,6 @@
 }
 
 /* ************** contact form  *************** */
-.contact-form-container {
-  display: none;  
-}
-
 form {  
   background-color: #f2f3f5;
   padding-top: 10px;
@@ -568,7 +550,6 @@ input.invalid {
   height: auto;
   border:2px solid #000;
 }
-
 .insight-menu a {
   text-decoration: none;
   color: #c0c0c0;

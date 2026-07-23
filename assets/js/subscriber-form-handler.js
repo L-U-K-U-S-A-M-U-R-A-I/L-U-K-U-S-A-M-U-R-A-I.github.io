@@ -2,6 +2,7 @@
 
 import { removeCurrentIcon } from './helper.js';
 
+const heroContainer = document.getElementById("hero-container");
 const subscriptionsContainer = document.getElementById("subscriptions-container");
 const contactFormContainer = document.getElementById("contact-form-container"); 
 const downloadsContainer = document.getElementById("downloads-container");  
@@ -11,6 +12,7 @@ document.getElementById("subscriptions").addEventListener("click", function(even
     event.preventDefault(); 
     contactFormContainer.style.display = "none";
     downloadsContainer.style.display = "none";
+    heroContainer.style.display = "none";
     subscriptionsContainer.style.display = "block";     
     subscriptionsContainer.focus();
     removeCurrentIcon();
@@ -21,4 +23,5 @@ document.getElementById("close-subscriptions").addEventListener("click", functio
     event.preventDefault(); 
     subscriptionsContainer.style.display = "none";
     subscriptionIcon.classList.remove("current-icon");
+    heroContainer.style.display = "block";
 });

@@ -2,6 +2,7 @@
 
 import { removeCurrentIcon } from './helper.js';
 
+const heroContainer = document.getElementById("hero-container");
 const downloadsContainer = document.getElementById("downloads-container");
 const contactFormContainer = document.getElementById("contact-form-container");
 const subscriptionsContainer = document.getElementById("subscriptions-container");  
@@ -11,6 +12,7 @@ document.getElementById("downloads").addEventListener("click", function(event) {
     event.preventDefault(); 
     contactFormContainer.style.display = "none";
     subscriptionsContainer.style.display = "none";
+    heroContainer.style.display = "none";
     downloadsContainer.style.display = "block";
     downloadsContainer.focus();  
     removeCurrentIcon();
@@ -19,7 +21,8 @@ document.getElementById("downloads").addEventListener("click", function(event) {
 
 document.getElementById("close-downloads").addEventListener("click", function(event) {
     event.preventDefault(); 
-    downloadsContainer.style.display = "none"; 
+    downloadsContainer.style.display = "none";
+    heroContainer.style.display = "block"; 
     downloadIcon.classList.remove("current-icon");
 });
 
