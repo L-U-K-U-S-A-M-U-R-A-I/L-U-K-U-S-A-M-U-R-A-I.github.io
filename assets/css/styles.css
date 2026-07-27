@@ -457,7 +457,9 @@ form {
   background-color: #f2f3f5;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 5px;  
+  border-radius: 5px;
+  border: none;
+  outline: none;  
 }
 select, textarea, input[type="text"], input[type="email"] {
   width: 80%;    

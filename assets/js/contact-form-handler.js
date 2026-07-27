@@ -13,8 +13,8 @@ window.addEventListener('load', (event) => {
     const urlParams = new URLSearchParams(queryString);  
     const action = urlParams.get('action-type');     
     if (action !== undefined && action === "contact-form") {  
-        downloadsContainer.style.display = "block";  
-        downloadsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });  
+        contactFormContainer.style.display = "block";  
+        contactFormContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });  
     };
 });
 
@@ -23,8 +23,9 @@ document.getElementById("contact-us").addEventListener("click", function(event) 
     downloadsContainer.style.display = "none";
     subscriptionsContainer.style.display = "none";
     heroContainer.style.display = "none";
-    contactFormContainer.style.display = "block";  
-    contactFormContainer.focus();
+    contactFormContainer.style.display = "block";
+    contactFormContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });   
+    //contactFormContainer.focus();
     removeCurrentIcon();
     contactIcon.classList.add("current-icon");
 });
@@ -33,5 +34,6 @@ document.getElementById("close").addEventListener("click", function(event) {
     event.preventDefault(); 
     contactFormContainer.style.display = "none"; 
     heroContainer.style.display = "block";
+    heroContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     contactIcon.classList.remove("current-icon");    
 });

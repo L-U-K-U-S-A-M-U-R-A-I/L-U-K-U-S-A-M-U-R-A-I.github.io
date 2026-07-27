@@ -13,7 +13,8 @@ document.getElementById("subscriptions").addEventListener("click", function(even
     contactFormContainer.style.display = "none";
     downloadsContainer.style.display = "none";
     heroContainer.style.display = "none";
-    subscriptionsContainer.style.display = "block";     
+    subscriptionsContainer.style.display = "block"; 
+    subscriptionsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });    
     subscriptionsContainer.focus();
     removeCurrentIcon();
     subscriptionIcon.classList.add("current-icon");
@@ -24,4 +25,5 @@ document.getElementById("close-subscriptions").addEventListener("click", functio
     subscriptionsContainer.style.display = "none";
     subscriptionIcon.classList.remove("current-icon");
     heroContainer.style.display = "block";
+    heroContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
